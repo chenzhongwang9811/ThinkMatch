@@ -22,5 +22,6 @@ RUN /opt/conda/bin/pip install torch-cluster==1.5.8 -f https://pytorch-geometric
 RUN /opt/conda/bin/pip install torch-spline-conv==1.2.0 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
 RUN /opt/conda/bin/pip install torch-geometric==1.6.3
 
+
 RUN update-alternatives --remove gcc /usr/bin/gcc-9
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
